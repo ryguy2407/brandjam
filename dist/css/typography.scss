@@ -31,6 +31,10 @@ p, li {
     @apply underline;
   }
 
+  p {
+    @apply mb-4;
+  }
+
   ul {
     @apply my-4;
     li {

@@ -16563,6 +16563,10 @@ p, li {
   text-decoration: underline;
 }
 
+.markdown p {
+  margin-bottom: 1rem;
+}
+
 .markdown ul {
   margin-top: 1rem;
   margin-bottom: 1rem;

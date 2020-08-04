@@ -1,0 +1,83 @@
+{% include 'partials/header.twig' %}
+<body class="antialiased bg-black overflow-x-hidden font-body">
+
+<div class="container mx-auto relative">
+</div>
+
+<header class="relative hidden lg:block">
+    <div class="container mx-auto py-16">
+        <div class="flex justify-between flex-row items-center">
+            <a href="/" class="justify-start">
+                <img src="/assets/img/logo.svg" alt="Brand Jam">
+            </a>
+            {% include 'partials/navigation.twig' with { textColour: 'red' } %}
+        </div>
+
+    </div>
+</header>
+<header class="block lg:hidden">
+    <div class="container mx-auto py-8">
+        <a href="/" class="mx-auto w-full text-center">
+            <img src="/assets/img/logo.svg" class="mx-auto" alt="Brand Jam">
+        </a>
+        {% include 'partials/navigation.twig' with { textColour: 'red' } %}
+    </div>
+</header>
+
+
+<div class="container mx-auto px-8 lg:px-0 text-red relative">
+    <div class="invisible lg:visible absolute h-screen flex flex-col items-center" style="top: 50%;left: -45px;">
+        <p class="text-teal uppercase transform rotate-90">Subscribe</p>
+        <i class="far fa-podcast text-teal text-3xl mt-16"></i>
+        <i class="fab fa-spotify text-teal text-3xl mt-4"></i>
+        <i class="fab fa-google text-teal text-3xl mt-4"></i>
+        <i class="fab fa-soundcloud text-teal text-3xl mt-4"></i>
+    </div>
+
+    <div class="flex flex-col lg:flex-row">
+        <div class="w-full lg:w-1/3"></div>
+        <div class="w-full lg:w-2/3">
+            <h1 class="text-5xl lg:text-7xl font-bold leading-none mb-8">
+                The podcast where we jam about brand because brand is our jam.
+            </h1>
+        </div>
+    </div>
+</div>
+
+<section class="relative pt-0 lg:pt-32 mb-8 lg:mb-32">
+    <img src="/assets/img/top-angle.svg" class="hidden xl:block absolute top-0" style="right: -600px;" alt="Brand Jam">
+    <div class="container mx-auto px-8 lg:px-0">
+        <div class="flex flex-col lg:flex-row">
+            <div class="w-full lg:w-1/3"></div>
+            <div class="w-full lg:w-2/3">
+                <img src="/assets/img/podcast-bg.svg" alt="Brand Jam">
+            </div>
+        </div>
+    </div>
+    <img src="/assets/img/bottom-angle.svg" class="hidden xl:block absolute bottom-0" style="left: 0px;" alt="Brand Jam">
+</section>
+
+<section>
+    <div class="container mx-auto px-8 lg:px-0">
+        <div class="flex flex-col lg:flex-row">
+            <div class="w-full lg:w-1/3"></div>
+            <div class="w-full lg:w-2/3">
+                <h2 class="text-3xl lg:text-5xl font-light text-red leading-tight mb-16">
+                    But seriously, it’s a podcast name that will stick in
+                    people’s minds and while it has a fun feel about it
+                    the subject matter will be serious with personality
+                    and ideally some laughs along the way too.
+                </h2>
+                <h2 class="text-3xl lg:text-5xl font-light text-white leading-tight mb-16">
+                    Sit back and enjoy.
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+{% include 'partials/footer.twig' %}

@@ -1,25 +1,30 @@
 {% include 'partials/header.twig' %}
 <body class="antialiased bg-red overflow-x-hidden font-body">
 
-    <div class="container mx-auto relative">
-    </div>
-
-    <header class="relative">
+    <header class="relative hidden lg:block">
         <div class="container mx-auto py-16">
             <div class="flex justify-between flex-row items-center">
                 <a href="/" class="justify-start">
                     <img src="/assets/img/logo-black.svg" alt="Brand Jam">
                 </a>
-                {% include 'partials/navigation.twig' with { textColour : 'black' } %}
+                {% include 'partials/navigation.twig' with { textColour: 'red' } %}
             </div>
 
+        </div>
+    </header>
+    <header class="block lg:hidden">
+        <div class="container mx-auto py-8">
+            <a href="/" class="mx-auto w-full text-center">
+                <img src="/assets/img/logo-black.svg" class="mx-auto" alt="Brand Jam">
+            </a>
+            {% include 'partials/navigation.twig' with { textColour: 'black' } %}
         </div>
     </header>
 
     <img class="absolute right-0 hidden xl:block" style="z-index: -1;" src="/assets/img/brandjam-bg-black.svg" alt="Brand Jam Watermark">
 
     <div class="container mx-auto px-8 lg:px-0 text-red relative">
-        <div class="absolute h-screen flex flex-col items-center" style="top: 50%;left: -45px;">
+        <div class="invisible lg:visible fixed h-screen flex flex-col items-center mt-64" style="margin-left: -40px;">
             <p class="text-black uppercase transform rotate-90">Subscribe</p>
             <i class="far fa-podcast text-black text-3xl mt-16"></i>
             <i class="fab fa-spotify text-black text-3xl mt-4"></i>
@@ -43,9 +48,9 @@
         </div>
     </div>
 
-    <div class="container mx-auto flex flex-row mb-64">
-        <div class="w-1/6"></div>
-        <div class="w-5/6 mt-32 justify-end">
+    <div class="container mx-auto flex flex-row mb-1 lg:mb-64">
+        <div class="hidden lg:block w-1/6"></div>
+        <div class="w-full lg:w-5/6 mt-8 lg:mt-32 justify-end">
             
             <audio id="player">
                 {% set audio = entry.audioFile.one() %}
@@ -75,8 +80,8 @@
                 <p class="time text-xs">00:00:00</p>
             </div>
 
-            <div class="flex flex-row">
-                <div class="w-1/3">
+            <div class="flex flex-col lg:flex-row">
+                <div class="w-full lg:w-1/3">
                     {% set image = entry.episodeImage.one() %}
                     <img src="{{ image.url }}" alt="{{ image.title }}">
                     <div class="bg-teal p-4 text-center flex flex-row space-x-4 justify-center items-center">
@@ -86,7 +91,7 @@
                         <i class="fab fa-linkedin text-2xl"></i>
                     </div>
                 </div>
-                <div class="w-2/3 bg-white">
+                <div class="w-full lg:w-2/3 bg-white">
 
                     <div class="p-8 border-b-4 border-red markdown">
                         <h3 class="font-extrabold text-2xl mb-4 uppercase">{{ entry.title }}</h3>
@@ -101,9 +106,10 @@
                             {% endfor %}
                         </ul>
                     </div>
-                    <div class="p-8 flex flex-row items-center">
+                    {% set transcript = entry.relatedTranscript.one() %}
+                    <a href="{{ transcript.url }}" target="_blank" class="p-8 flex flex-row items-center">
                         <i class="fal fa-file-alt mr-4 font-extrabold text-2xl"></i><p class="font-extrabold">READ TRANSCRIPT</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
