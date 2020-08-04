@@ -16535,6 +16535,30 @@ p, li {
   color: rgba(0, 0, 0, var(--text-opacity));
 }
 
+.markdown h1 {
+  font-size: 4rem;
+}
+
+.markdown h2 {
+  font-size: 3rem;
+}
+
+.markdown h3 {
+  font-size: 2.25rem;
+}
+
+.markdown h4 {
+  font-size: 1.875rem;
+}
+
+.markdown h5 {
+  font-size: 1.5rem;
+}
+
+.markdown h6 {
+  font-size: 1.25rem;
+}
+
 .markdown a {
   text-decoration: underline;
 }
