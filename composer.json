@@ -1,6 +1,7 @@
 {
   "require": {
     "craftcms/cms": "^3.4.25",
+    "topshelfcraft/wordsmith": "3.2.0",
     "vaersaagod/dospaces": "1.1.2",
     "vlucas/phpdotenv": "^3.4.0"
   },

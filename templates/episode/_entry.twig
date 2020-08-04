@@ -1,0 +1,176 @@
+{% include 'partials/header.twig' %}
+<body class="antialiased bg-red overflow-x-hidden font-body">
+
+    <div class="container mx-auto relative">
+    </div>
+
+    <header class="relative">
+        <div class="container mx-auto py-16">
+            <div class="flex justify-between flex-row items-center">
+                <a href="/" class="justify-start">
+                    <img src="/assets/img/logo-black.svg" alt="Brand Jam">
+                </a>
+                {% include 'partials/navigation.twig' with { textColour : 'black' } %}
+            </div>
+
+        </div>
+    </header>
+
+    <img class="absolute right-0" style="z-index: -1;" src="/assets/img/brandjam-bg-black.svg" alt="Brand Jam Watermark">
+
+    <div class="container mx-auto px-8 lg:px-0 text-red relative">
+        <div class="absolute h-screen flex flex-col items-center" style="top: 50%;left: -45px;">
+            <p class="text-black uppercase transform rotate-90">Subscribe</p>
+            <i class="far fa-podcast text-black text-3xl mt-16"></i>
+            <i class="fab fa-spotify text-black text-3xl mt-4"></i>
+            <i class="fab fa-google text-black text-3xl mt-4"></i>
+            <i class="fab fa-soundcloud text-black text-3xl mt-4"></i>
+        </div>
+
+        <div class="flex flex-col lg:flex-row">
+            <div class="w-1/6"></div>
+            <div class="w-full lg:w-3/6 text-black">
+                <h1 class="text-5xl text-black lg:text-7xl font-bold leading-none mb-8">
+                    {{ entry.title }}
+                </h1>
+                <h2 class="text-3xl text-black lg:text-5xl font-light leading-none mb-8">
+                    {{ entry.episodeSubheading }}
+                </h2>
+                <div class="markdown markdown-black">
+                    {{ entry.episodeDescription | markdown }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto flex flex-row mb-64">
+        <div class="w-1/6"></div>
+        <div class="w-5/6 mt-32 justify-end">
+            
+            <audio id="player">
+                {% set audio = entry.audioFile.one() %}
+                <source src="{{ audio.url }}" type="audio/mp3">
+            </audio>
+                
+            <div class="bg-altBlack p-4 flex flex-row audioPlayer items-center">
+                <div class="flex flex-row space-x-4">
+                    <button class="cursor-pointer focus:outline-none" id="skipPrev">
+                        <i class="far fa-flip-horizontal fa-chevron-double-right text-red"></i>
+                    </button>
+                    <button class="startAudio cursor-pointer focus:outline-none">
+                        <i class="fas fa-play text-teal text-3xl"></i>
+                    </button>
+                    <button class="pauseAudio cursor-pointer focus:outline-none hidden">
+                        <i class="fas fa-pause text-3xl text-teal"></i>
+                    </button>
+                    <button class="cursor-pointer focus:outline-none" id="skipNext">
+                        <i class="far fa-chevron-double-right text-red"></i>
+                    </button>
+                </div>
+                <div class="w-full mx-6 relative">
+                    <div class="bg-black h-4 w-full relative rounded-full timeline cursor-pointer">
+                        <div class="absolute w-6 h-6 bg-red rounded-full position" style="top:-4px;left:-1.5%;"></div>
+                    </div>
+                </div>
+                <p class="time text-xs">00:00:00</p>
+            </div>
+
+            <div class="flex flex-row">
+                <div class="w-1/3">
+                    {% set image = entry.episodeImage.one() %}
+                    <img src="{{ image.url }}" alt="{{ image.title }}">
+                    <div class="bg-teal p-4 text-center flex flex-row space-x-4 justify-center items-center">
+                        <p class="text-black font-bold">SHARE</p>
+                        <i class="fab fa-twitter text-2xl"></i>
+                        <i class="fab fa-facebook text-2xl"></i>
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </div>
+                </div>
+                <div class="w-2/3 bg-white">
+
+                    <div class="richText p-8 border-b-4 border-red">
+                        <h3 class="font-extrabold text-2xl mb-4 uppercase">{{ entry.title }}</h3>
+                        {{ entry.episodeOverview | markdown }}
+                    </div>
+                    <div class="richText p-8 border-b-4 border-red">
+                        <h3 class="font-extrabold text-2xl mb-4">RESOURCES</h3>
+                        <ul>
+                            {% set resources = entry.episodeResources.all() %}
+                            {% for resource in resources %}
+                                <li><a class="underline" href="{{ resource.resourceLink }}" target="_blank">{{ resource.resourceText }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="p-8 flex flex-row items-center">
+                        <i class="fal fa-file-alt mr-4 font-extrabold text-2xl"></i><p class="font-extrabold">READ TRANSCRIPT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let play = document.querySelector('.startAudio');
+        let pause = document.querySelector('.pauseAudio');
+        let player = document.getElementById('player');
+        let progress = document.querySelector('.position');
+        let audioPlayer = document.querySelector('.audioPlayer');
+        let timeline = document.querySelector('.timeline');
+
+        function startPlayer(e) {
+            player.play();
+            e.currentTarget.classList.add('hidden');
+            e.currentTarget.nextElementSibling.classList.remove('hidden');
+        }
+
+        function pausePlayer(e) {
+            player.pause();
+            e.currentTarget.classList.add('hidden');
+            e.currentTarget.previousElementSibling.classList.remove('hidden');
+        }
+
+        function stopPlayer() {
+            player.pause();
+        }
+
+        player.addEventListener('timeupdate', function(e){
+            let currentTime = e.currentTarget.currentTime;
+            let duration = e.currentTarget.duration;
+
+            progress.setAttribute('style', `
+                top: -4px;
+                left: ${(currentTime / duration) * 100 - 1.5}%;
+            `);
+
+            let date = new Date(null);
+            date.setSeconds(currentTime); // specify value for SECONDS here
+            let result = date.toISOString().substr(11, 8);
+            audioPlayer.querySelector('.time').innerHTML = result;
+        });
+
+        function movePlayhead(e) {
+            let playerOffset = ((e.currentTarget.clientWidth - (e.currentTarget.clientWidth - e.offsetX)) / e.currentTarget.clientWidth) * 100;
+            progress.setAttribute('style', `
+                top: -4px;
+                left: ${playerOffset}%;
+            `);
+            player.currentTime = player.duration * (playerOffset / 100) - 0.5;
+        }
+
+        function skipForward(e) {
+            player.currentTime = player.currentTime + 15;
+        }
+
+        function skipBack(e) {
+            player.currentTime = player.currentTime - 15;
+        }
+
+        play.addEventListener('click', startPlayer);
+        pause.addEventListener('click', pausePlayer);
+        timeline.addEventListener('click', movePlayhead);
+        document.getElementById('skipNext').addEventListener('click', skipForward);
+        document.getElementById('skipPrev').addEventListener('click', skipBack);
+
+    </script>
+
+{% include 'partials/footer.twig' %}

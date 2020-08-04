@@ -1,0 +1,15 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import './typography.scss';
+
+.hexMask {
+  clip-path: polygon(6% 20%, 90% 4%, 100% 100%, 0% 100%);
+}
+
+.tealCallout {
+  clip-path: polygon(0 0, 100% 5%, 100% 70%, 0 100%);
+}
