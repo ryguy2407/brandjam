@@ -1,0 +1,34 @@
+dateModified: 1596762619
+email:
+  fromEmail: ryan@newwordorder.com.au
+  fromName: 'Brand Jam'
+  transportType: craft\mail\transportadapters\Sendmail
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+plugins:
+  dospaces:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  gathercontent:
+    edition: standard
+    enabled: true
+    schemaVersion: '1'
+  wordsmith:
+    edition: standard
+    enabled: true
+    schemaVersion: 0.0.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Brand Jam'
+  schemaVersion: 3.5.12
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true

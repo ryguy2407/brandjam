@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: episodes
+name: Episodes
+propagationMethod: all
+siteSettings:
+  7e6c4de5-7eec-4744-a65c-9f27a2643bb0:
+    enabledByDefault: true
+    hasUrls: true
+    template: episode/_entry.twig
+    uriFormat: 'episodes/{slug}'
+type: channel

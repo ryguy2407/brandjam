@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: 402036bc-20ab-42f8-bfec-f23921cc2162
+handle: episodeSubheading
+instructions: ''
+name: 'Episode Subheading'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

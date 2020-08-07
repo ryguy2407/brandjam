@@ -121,26 +121,21 @@
     <div id="scott"></div>
     <section class="hidden lg:flex -mt-32 flex flex-row relative splitScreen">
         <div class="w-1/2 relative" style="z-index: -1;height: 700px;">
-            <img class="absolute object-cover h-full w-full" src="/assets/img/scott.jpg" alt="Scott Oxford">
+            {% set profilePic = entry.scottsProfilePic.one() %}
+            <img class="absolute object-cover h-full w-full" src="{{ profilePic.url }}" alt="{{ profilePic.title }}">
         </div>
         <div class="w-1/2 bg-red" style="z-index: -1;"></div>
         <div class="absolute container flex flex-row items-center offset" style="top:100px;left:0;">
             <div class="w-1/2"></div>
             <div class="w-1/2 pl-32 pt-32 richText text-black" style="">
-                <img src="/assets/img/scott-logo.svg" class="mb-8" alt="Scott Oxford">
-                <p class="text-black text-xl">
-                    Commodo elit at imperdiet dui accumsan sit. Turpis egestas
-                    maecenas pharetra convallis posuere morbi. Bibendum enim
-                    facilisis gravida neque convallis a cras semper.
-                </p>
-                <p class="text-black text-xl">
-                    Commodo elit at imperdiet dui accumsan sit. Turpis egestas
-                    maecenas pharetra convallis posuere morbi. Bibendum enim
-                    facilisis gravida neque convallis a cras semper.
-                </p>
-                <p class="text-black text-xl mb-0 flex flex-row items-center">
+                {% set logo = entry.scottsLogo.one() %}
+                <img src="{{ logo.url }}" class="mb-8" alt="{{ logo.title }}">
+                <div class="text-black text-xl">
+                    {{ entry.scottsBio | markdown }}
+                </div>
+                <a href="#contact" class="text-black text-xl mb-0 flex flex-row items-center">
                     <i class="far fa-envelope mr-4"></i> <strong>ASK A QUESTION</strong>
-                </p>
+                </a>
             </div>
         </div>
     </section>
@@ -149,34 +144,24 @@
             <img class="absolute object-cover h-full w-full" src="/assets/img/scott.jpg" alt="Scott Oxford">
         </div>
         <div class="w-full p-8 bg-red">
-            <img src="/assets/img/scott-logo.svg" class="mb-8" alt="Scott Oxford">
-            <p class="text-black text-xl">
-                Commodo elit at imperdiet dui accumsan sit. Turpis egestas
-                maecenas pharetra convallis posuere morbi. Bibendum enim
-                facilisis gravida neque convallis a cras semper.
-            </p>
-            <p class="text-black text-xl">
-                Commodo elit at imperdiet dui accumsan sit. Turpis egestas
-                maecenas pharetra convallis posuere morbi. Bibendum enim
-                facilisis gravida neque convallis a cras semper.
-            </p>
-            <p class="text-black text-xl mb-0 flex flex-row items-center">
+            <img class="absolute object-cover h-full w-full" src="{{ profilePic.url }}" alt="{{ profilePic.title }}">
+            <div class="text-black text-xl">
+                {{ entry.scottsBio | markdown }}
+            </div>
+            <a href="#contact" class="text-black text-xl mb-0 flex flex-row items-center">
                 <i class="far fa-envelope mr-4"></i> <strong>ASK A QUESTION</strong>
-            </p>
+            </a>
         </div>
     </section>
 
-    <section class="py-8 lg:py-32 relative text-red">
+    <section class="py-8 lg:py-32 relative text-red" id="contact">
         <img class="hidden lg:block absolute right-0 top-0 h-full pt-32" src="/assets/img/brandjam-bg-red.svg" alt="Brand Jam Watermark">
         <div class="container mx-auto px-8 lg:px-0">
             <div class="w-full lg:w-1/2">
                 <h3 class="font-extrabold text-6xl text-red">Contact</h3>
-                <p class="text-xl">
-                    Connect me with a potential guest
-                    Ask a question for the podcast
-                    Give feedback
-                    Just send a message to lonely old me
-                </p>
+                <div class="text-xl">
+                    {{ entry.contactText | markdown }}
+                </div>
                 <form action="#" class="flex flex-col space-y-8 mt-8">
                     <input class="placeholder-red focus:placeholder-black focus:outline-none bg-black border-b-2 border-red py-4 text-red" type="text" name="fullName" placeholder="Name">
                     <input class="placeholder-red focus:placeholder-black focus:outline-none bg-black border-b-2 border-red py-4 text-red" type="email" name="email" placeholder="Email">

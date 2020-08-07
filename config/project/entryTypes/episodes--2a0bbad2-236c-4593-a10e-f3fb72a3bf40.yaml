@@ -1,0 +1,45 @@
+fieldLayouts:
+  ba65ad51-3a32-4176-92b8-dcb944af1a78:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: c28f332b-6f98-4197-ba3f-2560cc92853f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 73d693f4-d415-42af-bf52-00a34d9b9621
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 48e29d85-b442-4771-a1ca-a91051a4a59c
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4a23aca9-e8b9-43d7-8c4d-306cbb307366
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 9e3e4400-02dc-47a7-a37d-fb1c3391e92a
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: d34348a7-e28d-4552-a301-669294106ccc
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 8fdcfd30-b8af-42fd-93d0-2475ce3f247e
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Episode Fields'
+        sortOrder: 1
+handle: episodes
+hasTitleField: true
+name: Episodes
+section: abb4177a-d044-495f-93ba-b210d2df09b0
+sortOrder: 1
+titleFormat: ''

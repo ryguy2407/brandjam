@@ -1,0 +1,54 @@
+field: d34348a7-e28d-4552-a301-669294106ccc
+fieldLayouts:
+  e1f9d2e1-6a0b-4dfd-954e-fd71df76825d:
+    tabs:
+      -
+        fields:
+          aa4ab191-bccc-4c1b-97d3-caafe79a92d1:
+            required: false
+            sortOrder: 1
+          f0b3766f-6aed-4180-9ac4-ea8c2f396157:
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  aa4ab191-bccc-4c1b-97d3-caafe79a92d1:
+    contentColumnType: text
+    fieldGroup: null
+    handle: resourceText
+    instructions: ''
+    name: 'Resource text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f0b3766f-6aed-4180-9ac4-ea8c2f396157:
+    contentColumnType: text
+    fieldGroup: null
+    handle: resourceLink
+    instructions: ''
+    name: 'Resource link'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: episodeResources
+name: 'Episode resources'
+sortOrder: 1

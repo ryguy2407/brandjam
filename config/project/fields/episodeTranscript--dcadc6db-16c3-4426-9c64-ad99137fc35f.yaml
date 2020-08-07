@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: 2848f61f-a635-4082-a4ae-0e460c981d0c
+handle: episodeTranscript
+instructions: ''
+name: 'Episode transcript'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

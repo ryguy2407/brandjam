@@ -1,0 +1,20 @@
+contentColumnType: string
+fieldGroup: 402036bc-20ab-42f8-bfec-f23921cc2162
+handle: relatedTranscript
+instructions: ''
+name: 'Related transcript'
+searchable: true
+settings:
+  allowSelfRelations: ''
+  limit: '1'
+  localizeRelations: false
+  selectionLabel: 'Add a transcript'
+  source: null
+  sources:
+    - 'section:62697def-e49b-4cb0-ba54-6f2fe8af087b'
+  targetSiteId: null
+  validateRelatedElements: ''
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

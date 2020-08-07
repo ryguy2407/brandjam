@@ -1,0 +1,33 @@
+fieldLayouts:
+  503b8ea4-99b9-4591-b98d-eadee414ac28:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 7e92aa1a-3f2d-4d11-9cd1-72054c7310a8
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: a5006cc5-b5b9-4a4a-89a7-c20d9510a872
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 201e601a-480b-41ae-92be-989cc806f879
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: dcadc6db-16c3-4426-9c64-ad99137fc35f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Transcript Fields'
+        sortOrder: 1
+handle: transcripts
+hasTitleField: true
+name: Transcripts
+section: 62697def-e49b-4cb0-ba54-6f2fe8af087b
+sortOrder: 1
+titleFormat: ''

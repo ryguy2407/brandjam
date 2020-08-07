@@ -1,0 +1,15 @@
+handle: episodes
+hasUrls: true
+name: Episodes
+settings:
+  bucket: nwo
+  contentDisposition: ''
+  endpoint: 'https://nyc3.digitaloceanspaces.com'
+  expires: '3 months'
+  keyId: $DO_ACCESS_KEY
+  region: nyc3
+  secret: $DO_SECRET_KEY
+  subfolder: brandjam
+sortOrder: 1
+type: vaersaagod\dospaces\Volume
+url: 'https://nwo.nyc3.cdn.digitaloceanspaces.com'
