@@ -1306,8 +1306,8 @@ video {
 
 .divide-red > :not(template) ~ :not(template) {
   --divide-opacity: 1;
-  border-color: #EF351D;
-  border-color: rgba(239, 53, 29, var(--divide-opacity));
+  border-color: #EC1200;
+  border-color: rgba(236, 18, 0, var(--divide-opacity));
 }
 
 .divide-orange-100 > :not(template) ~ :not(template) {
@@ -1866,8 +1866,8 @@ video {
 
 .bg-red {
   --bg-opacity: 1;
-  background-color: #EF351D;
-  background-color: rgba(239, 53, 29, var(--bg-opacity));
+  background-color: #EC1200;
+  background-color: rgba(236, 18, 0, var(--bg-opacity));
 }
 
 .bg-orange-100 {
@@ -2342,8 +2342,8 @@ video {
 
 .hover\:bg-red:hover {
   --bg-opacity: 1;
-  background-color: #EF351D;
-  background-color: rgba(239, 53, 29, var(--bg-opacity));
+  background-color: #EC1200;
+  background-color: rgba(236, 18, 0, var(--bg-opacity));
 }
 
 .hover\:bg-orange-100:hover {
@@ -2818,8 +2818,8 @@ video {
 
 .focus\:bg-red:focus {
   --bg-opacity: 1;
-  background-color: #EF351D;
-  background-color: rgba(239, 53, 29, var(--bg-opacity));
+  background-color: #EC1200;
+  background-color: rgba(236, 18, 0, var(--bg-opacity));
 }
 
 .focus\:bg-orange-100:focus {
@@ -3434,8 +3434,8 @@ video {
 
 .border-red {
   --border-opacity: 1;
-  border-color: #EF351D;
-  border-color: rgba(239, 53, 29, var(--border-opacity));
+  border-color: #EC1200;
+  border-color: rgba(236, 18, 0, var(--border-opacity));
 }
 
 .border-orange-100 {
@@ -3910,8 +3910,8 @@ video {
 
 .hover\:border-red:hover {
   --border-opacity: 1;
-  border-color: #EF351D;
-  border-color: rgba(239, 53, 29, var(--border-opacity));
+  border-color: #EC1200;
+  border-color: rgba(236, 18, 0, var(--border-opacity));
 }
 
 .hover\:border-orange-100:hover {
@@ -4386,8 +4386,8 @@ video {
 
 .focus\:border-red:focus {
   --border-opacity: 1;
-  border-color: #EF351D;
-  border-color: rgba(239, 53, 29, var(--border-opacity));
+  border-color: #EC1200;
+  border-color: rgba(236, 18, 0, var(--border-opacity));
 }
 
 .focus\:border-orange-100:focus {
@@ -8213,26 +8213,26 @@ video {
 
 .placeholder-red::-moz-placeholder {
   --placeholder-opacity: 1;
-  color: #EF351D;
-  color: rgba(239, 53, 29, var(--placeholder-opacity));
+  color: #EC1200;
+  color: rgba(236, 18, 0, var(--placeholder-opacity));
 }
 
 .placeholder-red:-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #EF351D;
-  color: rgba(239, 53, 29, var(--placeholder-opacity));
+  color: #EC1200;
+  color: rgba(236, 18, 0, var(--placeholder-opacity));
 }
 
 .placeholder-red::-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #EF351D;
-  color: rgba(239, 53, 29, var(--placeholder-opacity));
+  color: #EC1200;
+  color: rgba(236, 18, 0, var(--placeholder-opacity));
 }
 
 .placeholder-red::placeholder {
   --placeholder-opacity: 1;
-  color: #EF351D;
-  color: rgba(239, 53, 29, var(--placeholder-opacity));
+  color: #EC1200;
+  color: rgba(236, 18, 0, var(--placeholder-opacity));
 }
 
 .placeholder-orange-100::-moz-placeholder {
@@ -10117,26 +10117,26 @@ video {
 
 .focus\:placeholder-red:focus::-moz-placeholder {
   --placeholder-opacity: 1;
-  color: #EF351D;
-  color: rgba(239, 53, 29, var(--placeholder-opacity));
+  color: #EC1200;
+  color: rgba(236, 18, 0, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-red:focus:-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #EF351D;
-  color: rgba(239, 53, 29, var(--placeholder-opacity));
+  color: #EC1200;
+  color: rgba(236, 18, 0, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-red:focus::-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #EF351D;
-  color: rgba(239, 53, 29, var(--placeholder-opacity));
+  color: #EC1200;
+  color: rgba(236, 18, 0, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-red:focus::placeholder {
   --placeholder-opacity: 1;
-  color: #EF351D;
-  color: rgba(239, 53, 29, var(--placeholder-opacity));
+  color: #EC1200;
+  color: rgba(236, 18, 0, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-orange-100:focus::-moz-placeholder {
@@ -12234,8 +12234,8 @@ video {
 
 .text-red {
   --text-opacity: 1;
-  color: #EF351D;
-  color: rgba(239, 53, 29, var(--text-opacity));
+  color: #EC1200;
+  color: rgba(236, 18, 0, var(--text-opacity));
 }
 
 .text-orange-100 {
@@ -12710,8 +12710,8 @@ video {
 
 .hover\:text-red:hover {
   --text-opacity: 1;
-  color: #EF351D;
-  color: rgba(239, 53, 29, var(--text-opacity));
+  color: #EC1200;
+  color: rgba(236, 18, 0, var(--text-opacity));
 }
 
 .hover\:text-orange-100:hover {
@@ -13186,8 +13186,8 @@ video {
 
 .focus\:text-red:focus {
   --text-opacity: 1;
-  color: #EF351D;
-  color: rgba(239, 53, 29, var(--text-opacity));
+  color: #EC1200;
+  color: rgba(236, 18, 0, var(--text-opacity));
 }
 
 .focus\:text-orange-100:focus {
@@ -17227,8 +17227,8 @@ p, li {
 
   .sm\:divide-red > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--divide-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--divide-opacity));
   }
 
   .sm\:divide-orange-100 > :not(template) ~ :not(template) {
@@ -17787,8 +17787,8 @@ p, li {
 
   .sm\:bg-red {
     --bg-opacity: 1;
-    background-color: #EF351D;
-    background-color: rgba(239, 53, 29, var(--bg-opacity));
+    background-color: #EC1200;
+    background-color: rgba(236, 18, 0, var(--bg-opacity));
   }
 
   .sm\:bg-orange-100 {
@@ -18263,8 +18263,8 @@ p, li {
 
   .sm\:hover\:bg-red:hover {
     --bg-opacity: 1;
-    background-color: #EF351D;
-    background-color: rgba(239, 53, 29, var(--bg-opacity));
+    background-color: #EC1200;
+    background-color: rgba(236, 18, 0, var(--bg-opacity));
   }
 
   .sm\:hover\:bg-orange-100:hover {
@@ -18739,8 +18739,8 @@ p, li {
 
   .sm\:focus\:bg-red:focus {
     --bg-opacity: 1;
-    background-color: #EF351D;
-    background-color: rgba(239, 53, 29, var(--bg-opacity));
+    background-color: #EC1200;
+    background-color: rgba(236, 18, 0, var(--bg-opacity));
   }
 
   .sm\:focus\:bg-orange-100:focus {
@@ -19355,8 +19355,8 @@ p, li {
 
   .sm\:border-red {
     --border-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--border-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--border-opacity));
   }
 
   .sm\:border-orange-100 {
@@ -19831,8 +19831,8 @@ p, li {
 
   .sm\:hover\:border-red:hover {
     --border-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--border-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--border-opacity));
   }
 
   .sm\:hover\:border-orange-100:hover {
@@ -20307,8 +20307,8 @@ p, li {
 
   .sm\:focus\:border-red:focus {
     --border-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--border-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--border-opacity));
   }
 
   .sm\:focus\:border-orange-100:focus {
@@ -24134,26 +24134,26 @@ p, li {
 
   .sm\:placeholder-red::-moz-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-red:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-red::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-red::placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-orange-100::-moz-placeholder {
@@ -26038,26 +26038,26 @@ p, li {
 
   .sm\:focus\:placeholder-red:focus::-moz-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-red:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-red:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-red:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-orange-100:focus::-moz-placeholder {
@@ -28155,8 +28155,8 @@ p, li {
 
   .sm\:text-red {
     --text-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--text-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--text-opacity));
   }
 
   .sm\:text-orange-100 {
@@ -28631,8 +28631,8 @@ p, li {
 
   .sm\:hover\:text-red:hover {
     --text-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--text-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--text-opacity));
   }
 
   .sm\:hover\:text-orange-100:hover {
@@ -29107,8 +29107,8 @@ p, li {
 
   .sm\:focus\:text-red:focus {
     --text-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--text-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--text-opacity));
   }
 
   .sm\:focus\:text-orange-100:focus {
@@ -33072,8 +33072,8 @@ p, li {
 
   .md\:divide-red > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--divide-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--divide-opacity));
   }
 
   .md\:divide-orange-100 > :not(template) ~ :not(template) {
@@ -33632,8 +33632,8 @@ p, li {
 
   .md\:bg-red {
     --bg-opacity: 1;
-    background-color: #EF351D;
-    background-color: rgba(239, 53, 29, var(--bg-opacity));
+    background-color: #EC1200;
+    background-color: rgba(236, 18, 0, var(--bg-opacity));
   }
 
   .md\:bg-orange-100 {
@@ -34108,8 +34108,8 @@ p, li {
 
   .md\:hover\:bg-red:hover {
     --bg-opacity: 1;
-    background-color: #EF351D;
-    background-color: rgba(239, 53, 29, var(--bg-opacity));
+    background-color: #EC1200;
+    background-color: rgba(236, 18, 0, var(--bg-opacity));
   }
 
   .md\:hover\:bg-orange-100:hover {
@@ -34584,8 +34584,8 @@ p, li {
 
   .md\:focus\:bg-red:focus {
     --bg-opacity: 1;
-    background-color: #EF351D;
-    background-color: rgba(239, 53, 29, var(--bg-opacity));
+    background-color: #EC1200;
+    background-color: rgba(236, 18, 0, var(--bg-opacity));
   }
 
   .md\:focus\:bg-orange-100:focus {
@@ -35200,8 +35200,8 @@ p, li {
 
   .md\:border-red {
     --border-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--border-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--border-opacity));
   }
 
   .md\:border-orange-100 {
@@ -35676,8 +35676,8 @@ p, li {
 
   .md\:hover\:border-red:hover {
     --border-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--border-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--border-opacity));
   }
 
   .md\:hover\:border-orange-100:hover {
@@ -36152,8 +36152,8 @@ p, li {
 
   .md\:focus\:border-red:focus {
     --border-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--border-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--border-opacity));
   }
 
   .md\:focus\:border-orange-100:focus {
@@ -39979,26 +39979,26 @@ p, li {
 
   .md\:placeholder-red::-moz-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .md\:placeholder-red:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .md\:placeholder-red::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .md\:placeholder-red::placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .md\:placeholder-orange-100::-moz-placeholder {
@@ -41883,26 +41883,26 @@ p, li {
 
   .md\:focus\:placeholder-red:focus::-moz-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-red:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-red:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-red:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-orange-100:focus::-moz-placeholder {
@@ -44000,8 +44000,8 @@ p, li {
 
   .md\:text-red {
     --text-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--text-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--text-opacity));
   }
 
   .md\:text-orange-100 {
@@ -44476,8 +44476,8 @@ p, li {
 
   .md\:hover\:text-red:hover {
     --text-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--text-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--text-opacity));
   }
 
   .md\:hover\:text-orange-100:hover {
@@ -44952,8 +44952,8 @@ p, li {
 
   .md\:focus\:text-red:focus {
     --text-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--text-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--text-opacity));
   }
 
   .md\:focus\:text-orange-100:focus {
@@ -48917,8 +48917,8 @@ p, li {
 
   .lg\:divide-red > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--divide-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--divide-opacity));
   }
 
   .lg\:divide-orange-100 > :not(template) ~ :not(template) {
@@ -49477,8 +49477,8 @@ p, li {
 
   .lg\:bg-red {
     --bg-opacity: 1;
-    background-color: #EF351D;
-    background-color: rgba(239, 53, 29, var(--bg-opacity));
+    background-color: #EC1200;
+    background-color: rgba(236, 18, 0, var(--bg-opacity));
   }
 
   .lg\:bg-orange-100 {
@@ -49953,8 +49953,8 @@ p, li {
 
   .lg\:hover\:bg-red:hover {
     --bg-opacity: 1;
-    background-color: #EF351D;
-    background-color: rgba(239, 53, 29, var(--bg-opacity));
+    background-color: #EC1200;
+    background-color: rgba(236, 18, 0, var(--bg-opacity));
   }
 
   .lg\:hover\:bg-orange-100:hover {
@@ -50429,8 +50429,8 @@ p, li {
 
   .lg\:focus\:bg-red:focus {
     --bg-opacity: 1;
-    background-color: #EF351D;
-    background-color: rgba(239, 53, 29, var(--bg-opacity));
+    background-color: #EC1200;
+    background-color: rgba(236, 18, 0, var(--bg-opacity));
   }
 
   .lg\:focus\:bg-orange-100:focus {
@@ -51045,8 +51045,8 @@ p, li {
 
   .lg\:border-red {
     --border-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--border-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--border-opacity));
   }
 
   .lg\:border-orange-100 {
@@ -51521,8 +51521,8 @@ p, li {
 
   .lg\:hover\:border-red:hover {
     --border-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--border-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--border-opacity));
   }
 
   .lg\:hover\:border-orange-100:hover {
@@ -51997,8 +51997,8 @@ p, li {
 
   .lg\:focus\:border-red:focus {
     --border-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--border-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--border-opacity));
   }
 
   .lg\:focus\:border-orange-100:focus {
@@ -55824,26 +55824,26 @@ p, li {
 
   .lg\:placeholder-red::-moz-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-red:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-red::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-red::placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-orange-100::-moz-placeholder {
@@ -57728,26 +57728,26 @@ p, li {
 
   .lg\:focus\:placeholder-red:focus::-moz-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-red:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-red:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-red:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-orange-100:focus::-moz-placeholder {
@@ -59845,8 +59845,8 @@ p, li {
 
   .lg\:text-red {
     --text-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--text-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--text-opacity));
   }
 
   .lg\:text-orange-100 {
@@ -60321,8 +60321,8 @@ p, li {
 
   .lg\:hover\:text-red:hover {
     --text-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--text-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--text-opacity));
   }
 
   .lg\:hover\:text-orange-100:hover {
@@ -60797,8 +60797,8 @@ p, li {
 
   .lg\:focus\:text-red:focus {
     --text-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--text-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--text-opacity));
   }
 
   .lg\:focus\:text-orange-100:focus {
@@ -64762,8 +64762,8 @@ p, li {
 
   .xl\:divide-red > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--divide-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--divide-opacity));
   }
 
   .xl\:divide-orange-100 > :not(template) ~ :not(template) {
@@ -65322,8 +65322,8 @@ p, li {
 
   .xl\:bg-red {
     --bg-opacity: 1;
-    background-color: #EF351D;
-    background-color: rgba(239, 53, 29, var(--bg-opacity));
+    background-color: #EC1200;
+    background-color: rgba(236, 18, 0, var(--bg-opacity));
   }
 
   .xl\:bg-orange-100 {
@@ -65798,8 +65798,8 @@ p, li {
 
   .xl\:hover\:bg-red:hover {
     --bg-opacity: 1;
-    background-color: #EF351D;
-    background-color: rgba(239, 53, 29, var(--bg-opacity));
+    background-color: #EC1200;
+    background-color: rgba(236, 18, 0, var(--bg-opacity));
   }
 
   .xl\:hover\:bg-orange-100:hover {
@@ -66274,8 +66274,8 @@ p, li {
 
   .xl\:focus\:bg-red:focus {
     --bg-opacity: 1;
-    background-color: #EF351D;
-    background-color: rgba(239, 53, 29, var(--bg-opacity));
+    background-color: #EC1200;
+    background-color: rgba(236, 18, 0, var(--bg-opacity));
   }
 
   .xl\:focus\:bg-orange-100:focus {
@@ -66890,8 +66890,8 @@ p, li {
 
   .xl\:border-red {
     --border-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--border-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--border-opacity));
   }
 
   .xl\:border-orange-100 {
@@ -67366,8 +67366,8 @@ p, li {
 
   .xl\:hover\:border-red:hover {
     --border-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--border-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--border-opacity));
   }
 
   .xl\:hover\:border-orange-100:hover {
@@ -67842,8 +67842,8 @@ p, li {
 
   .xl\:focus\:border-red:focus {
     --border-opacity: 1;
-    border-color: #EF351D;
-    border-color: rgba(239, 53, 29, var(--border-opacity));
+    border-color: #EC1200;
+    border-color: rgba(236, 18, 0, var(--border-opacity));
   }
 
   .xl\:focus\:border-orange-100:focus {
@@ -71669,26 +71669,26 @@ p, li {
 
   .xl\:placeholder-red::-moz-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-red:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-red::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-red::placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-orange-100::-moz-placeholder {
@@ -73573,26 +73573,26 @@ p, li {
 
   .xl\:focus\:placeholder-red:focus::-moz-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-red:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-red:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-red:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--placeholder-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-orange-100:focus::-moz-placeholder {
@@ -75690,8 +75690,8 @@ p, li {
 
   .xl\:text-red {
     --text-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--text-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--text-opacity));
   }
 
   .xl\:text-orange-100 {
@@ -76166,8 +76166,8 @@ p, li {
 
   .xl\:hover\:text-red:hover {
     --text-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--text-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--text-opacity));
   }
 
   .xl\:hover\:text-orange-100:hover {
@@ -76642,8 +76642,8 @@ p, li {
 
   .xl\:focus\:text-red:focus {
     --text-opacity: 1;
-    color: #EF351D;
-    color: rgba(239, 53, 29, var(--text-opacity));
+    color: #EC1200;
+    color: rgba(236, 18, 0, var(--text-opacity));
   }
 
   .xl\:focus\:text-orange-100:focus {
