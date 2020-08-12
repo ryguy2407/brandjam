@@ -1,0 +1,19 @@
+<header class="relative hidden lg:block">
+    <div class="container mx-auto py-16">
+        <div class="flex justify-between flex-row items-center">
+            <a href="/" class="justify-start">
+                <img src="/assets/img/logo-black.svg" alt="Brand Jam">
+            </a>
+            {% include 'partials/navigation.twig' with { textColour: 'black' } %}
+        </div>
+
+    </div>
+</header>
+<header class="block lg:hidden">
+    <div class="container mx-auto py-8">
+        <a href="/" class="mx-auto w-full text-center">
+            <img src="/assets/img/logo-black.svg" class="mx-auto" alt="Brand Jam">
+        </a>
+        {% include 'partials/navigation.twig' with { textColour: 'black' } %}
+    </div>
+</header>

@@ -57,40 +57,40 @@
 
             {% set entries = craft.entries().section('episodes').orderBy('postDate asc').all() %}
             {% for episode in entries %}
-            <div class="{% if loop.first %}bg-red{% endif %} episode border-red border-b">
-                <div class="p-8 flex items-center cursor-pointer">
-                    <h2 class="text-red text-4xl lg:text-8xl font-extrabold leading-none w-1/6">
-                        {{ "%02d"|format(loop.index) }}
-                    </h2>
-                    <div>
-                        <h2 class="text-red text-2xl lg:text-5xl font-extrabold leading-none">
-                            {{ episode.title }}
+                <div class="{% if loop.first %}bg-red{% endif %} episode border-red border-b">
+                    <div class="p-8 flex items-center cursor-pointer">
+                        <h2 class="text-red text-4xl lg:text-8xl font-extrabold leading-none w-1/6">
+                            {{ "%02d"|format(loop.index) }}
                         </h2>
-                        <p class="text-xl text-red">
-                            {{ episode.episodeSubheading }}
-                        </p>
+                        <div>
+                            <h2 class="text-red text-2xl lg:text-5xl font-extrabold leading-none">
+                                {{ episode.title }}
+                            </h2>
+                            <p class="text-xl text-red">
+                                {{ episode.episodeSubheading }}
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-col lg:flex-row items-center episodeInfo {% if not loop.first %}hidden{% endif %}">
-                    <div class="w-full px-8 lg:px-0 lg:w-1/2">
-                        {% set image = episode.episodeImage.one() %}
-                        {% if image | length %}
-                            <a href="{{ episode.url }}">
-                                <img class="hexMask ml-0 mb-8 lg:mb-0 lg:ml-8" src="{{ image.url }}" alt="{{ image.title }}">
+                    <div class="flex flex-col lg:flex-row items-center episodeInfo {% if not loop.first %}hidden{% endif %}">
+                        <div class="w-full px-8 lg:px-0 lg:w-1/2">
+                            {% set image = episode.episodeImage.one() %}
+                            {% if image | length %}
+                                <a href="{{ episode.url }}">
+                                    <img class="hexMask ml-0 mb-8 lg:mb-0 lg:ml-8" src="{{ image.url }}" alt="{{ image.title }}">
+                                </a>
+                            {% endif %}
+                        </div>
+                        <div class="p-8 w-full lg:w-1/2 lg:pl-16 lg:pr-8 lg:pb-8">
+                            <p class="mb-8">
+                                {{ episode.episodeDescription|markdown|chop(limit=30, unit='w') }}...
+                            </p>
+                            <a href="{{ episode.url }}" class="flex flex-row items-center">
+                                <i class="far fa-play-circle mr-4 text-3xl"></i>
+                                <p><strong>LISTEN TO EPISODE</strong></p>
                             </a>
-                        {% endif %}
-                    </div>
-                    <div class="p-8 w-full lg:w-1/2 lg:pl-16 lg:pr-8 lg:pb-8">
-                        <p class="mb-8">
-                            {{ episode.episodeDescription|markdown|chop(limit=30, unit='w') }}...
-                        </p>
-                        <a href="{{ episode.url }}" class="flex flex-row items-center">
-                            <i class="far fa-play-circle mr-4 text-3xl"></i>
-                            <p><strong>LISTEN TO EPISODE</strong></p>
-                        </a>
+                        </div>
                     </div>
                 </div>
-            </div>
             {% endfor %}
 
 

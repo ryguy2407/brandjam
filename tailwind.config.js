@@ -1,5 +1,9 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './templates/*.twig',
+    './templates/**/*.twig',
+    './templates/**/**/*.twig',
+  ],
   theme: {
     fontFamily: {
       'body': ['"Work Sans"', 'Arial', 'sans-serif'],

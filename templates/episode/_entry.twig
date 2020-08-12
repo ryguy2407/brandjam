@@ -1,25 +1,7 @@
 {% include 'partials/header.twig' %}
 <body class="antialiased bg-red overflow-x-hidden font-body">
 
-    <header class="relative hidden lg:block">
-        <div class="container mx-auto py-16">
-            <div class="flex justify-between flex-row items-center">
-                <a href="/" class="justify-start">
-                    <img src="/assets/img/logo-black.svg" alt="Brand Jam">
-                </a>
-                {% include 'partials/navigation.twig' with { textColour: 'red' } %}
-            </div>
-
-        </div>
-    </header>
-    <header class="block lg:hidden">
-        <div class="container mx-auto py-8">
-            <a href="/" class="mx-auto w-full text-center">
-                <img src="/assets/img/logo-black.svg" class="mx-auto" alt="Brand Jam">
-            </a>
-            {% include 'partials/navigation.twig' with { textColour: 'black' } %}
-        </div>
-    </header>
+    {% include 'episode/partials/_header.twig' %}
 
     <img class="absolute right-0 hidden xl:block" style="z-index: -1;" src="/assets/img/brandjam-bg-black.svg" alt="Brand Jam Watermark">
 
