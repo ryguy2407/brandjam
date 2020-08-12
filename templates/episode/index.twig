@@ -22,7 +22,7 @@
                 <a href="{{ episode.url }}" class="episode block {% if not loop.last %}border-black border-b-2{% endif %} w-full">
                     <div class="p-8 flex items-center cursor-pointer">
                         <h2 class="text-black text-4xl lg:text-8xl font-extrabold leading-none w-1/6 mr-16">
-                            {{ "%02d"|format(loop.index) }}
+                            {{ episode.episodeNumber }}
                         </h2>
                         <div>
                             <h2 class="text-black text-2xl lg:text-5xl font-extrabold leading-none">
