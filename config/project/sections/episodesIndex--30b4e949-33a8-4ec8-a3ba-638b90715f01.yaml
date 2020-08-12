@@ -1,0 +1,23 @@
+enableVersioning: true
+handle: episodesIndex
+name: 'Episode Listing Page'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7e6c4de5-7eec-4744-a65c-9f27a2643bb0:
+    enabledByDefault: true
+    hasUrls: true
+    template: episode/index
+    uriFormat: episodes
+type: single

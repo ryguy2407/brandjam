@@ -1,6 +1,6 @@
 {
   "require": {
-    "craftcms/cms": "3.5.2",
+    "craftcms/cms": "3.5.3",
     "craftcms/feed-me": "4.2.3",
     "gathercontent/gathercontent": "1.0.11",
     "topshelfcraft/wordsmith": "3.3.0.1",
