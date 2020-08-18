@@ -3,13 +3,15 @@
     xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>Brandjam Podcast</title>
-    <googleplay:owner>hello@thatsnotcanon.com</googleplay:owner>
-    <googleplay:author>Scott Oxford</googleplay:author>
-    <itunes:author>Scott Oxford</itunes:author>
+    <title>{{ rssGlobals.podcastTitle }}</title>
+    <googleplay:owner>{{ rssGlobals.podcastEmail }}</googleplay:owner>
+    <googleplay:author>{{ rssGlobals.podcastAuthor }}</googleplay:author>
+    <itunes:author>{{ rssGlobals.podcastAuthor }}</itunes:author>
     <itunes:type>serial</itunes:type>
-    <description>A podcast where we jam about brand, becuase brand is our jam.</description>
-    <googleplay:image href="https://www.example.com/podcasts/dafnas-zebras/img/dafna-zebra-pod-logo.jpg"/>
+    <description>{{ rssGlobals.podcastDescription }}</description>
+    {% set image = rssGlobals.podcastImage.one() %}
+    <googleplay:image href="{{ image.url }}"/>
+    <itunes:image href="{{ image.url }}"/>
     <language>en-au</language>
     <link>https://brandjam.co/</link>
     <itunes:category text="Business" />
