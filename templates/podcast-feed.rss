@@ -12,6 +12,7 @@
     <googleplay:image href="https://www.example.com/podcasts/dafnas-zebras/img/dafna-zebra-pod-logo.jpg"/>
     <language>en-au</language>
     <link>https://brandjam.co/</link>
+    <itunes:category text="Business" />
     {% for entry in craft.entries.section('episodes').all() %}
     <item>
       <title>{{ entry.title }}</title>
@@ -22,7 +23,6 @@
       <enclosure url="{{ audioFile.url }}"
                  type="audio/mpeg" length="{{ audioFile.size }}"/>
       <itunes:duration>{{ entry.episodeLength }}</itunes:duration>
-      <itunes:category text="Business" />
     </item>
     {% endfor %}
   </channel>
