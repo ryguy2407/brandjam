@@ -6,11 +6,12 @@
     <title>Brandjam Podcast</title>
     <googleplay:owner>hello@thatsnotcanon.com</googleplay:owner>
     <googleplay:author>Scott Oxford</googleplay:author>
-    <author>Scott Oxford</author>
+    <itunes:author>Scott Oxford</itunes:author>
+    <itunes:type>serial</itunes:type>
     <description>A podcast where we jam about brand, becuase brand is our jam.</description>
     <googleplay:image href="https://www.example.com/podcasts/dafnas-zebras/img/dafna-zebra-pod-logo.jpg"/>
     <language>en-au</language>
-    <link>https://brandjam.co/</link>\
+    <link>https://brandjam.co/</link>
     {% for entry in craft.entries.section('episodes').all() %}
     <item>
       <title>{{ entry.title }}</title>
@@ -21,7 +22,7 @@
       <enclosure url="{{ audioFile.url }}"
                  type="audio/mpeg" length="{{ audioFile.size }}"/>
       <itunes:duration>{{ entry.episodeLength }}</itunes:duration>
-      <itunes:category>Business</itunes:category>
+      <itunes:category text="Business" />
     </item>
     {% endfor %}
   </channel>
