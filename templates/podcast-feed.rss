@@ -4,7 +4,7 @@
     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>Brandjam Podcast</title>
-    <googleplay:owner>scottoxford@newwordorder.com.au</googleplay:owner>
+    <googleplay:owner>hello@thatsnotcanon.com</googleplay:owner>
     <googleplay:author>Scott Oxford</googleplay:author>
     <description>A podcast where we jam about brand, becuase brand is our jam.</description>
     <googleplay:image href="https://www.example.com/podcasts/dafnas-zebras/img/dafna-zebra-pod-logo.jpg"/>
@@ -13,12 +13,14 @@
     {% for entry in craft.entries.section('episodes').all() %}
     <item>
       <title>{{ entry.title }}</title>
+      <author>Scott Oxford</author>
       <description>{{ entry.episodeDescription }}</description>
       <pubDate>{{ entry.postDate | date }}</pubDate>
       {% set audioFile = entry.audioFile.one() %}
       <enclosure url="{{ audioFile.url }}"
                  type="audio/mpeg" length="{{ audioFile.size }}"/>
       <itunes:duration>{{ entry.episodeLength }}</itunes:duration>
+      <itunes:category>Business</itunes:category>
     </item>
     {% endfor %}
   </channel>
