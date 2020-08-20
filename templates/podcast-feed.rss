@@ -21,7 +21,7 @@
     <itunes:explicit>false</itunes:explicit>
     {% for entry in craft.entries.section('episodes').all() %}
         <item>
-          <title>{{ entry.title }}</title>
+          <title>{{ entry.episodeTitle }} - {{ entry.episodeSubheading }}</title>
           <author>Scott Oxford</author>
           <description>{{ entry.episodeDescription }}</description>
           <pubDate>{{ entry.postDate | date }}</pubDate>
