@@ -121,7 +121,7 @@
 
     <div id="scott"></div>
     <section class="hidden lg:flex -mt-32 flex flex-row relative splitScreen">
-        <div class="w-1/2 relative" style="z-index: -1;height: 700px;">
+        <div class="w-1/2 relative" style="z-index: -1;height: 1300px;">
             {% set profilePic = entry.scottsProfilePic.one() %}
             <img class="absolute object-cover h-full w-full" src="{{ profilePic.url }}" alt="{{ profilePic.title }}">
         </div>
@@ -145,8 +145,8 @@
             <img class="absolute object-cover h-full w-full" src="/assets/img/scott.jpg" alt="Scott Oxford">
         </div>
         <div class="w-full p-8 bg-red">
-            <img class="absolute object-cover h-full w-full" src="{{ profilePic.url }}" alt="{{ profilePic.title }}">
-            <div class="text-black text-xl">
+            <img class="hidden absolute object-cover h-full w-full" src="{{ profilePic.url }}" alt="{{ profilePic.title }}">
+            <div class="text-black text-xl richText">
                 {{ entry.scottsBio | markdown }}
             </div>
             <a href="#contact" class="text-black text-xl mb-0 flex flex-row items-center">
