@@ -5,6 +5,9 @@
   <channel>
     <title>{{ rssGlobals.podcastTitle }}</title>
     <googleplay:owner>{{ rssGlobals.podcastEmail }}</googleplay:owner>
+    <itunes:owner>
+      <itunes:email>hello@thatsnotcanon.com</itunes:email>
+    </itunes:owner>
     <googleplay:author>{{ rssGlobals.podcastAuthor }}</googleplay:author>
     <itunes:author>{{ rssGlobals.podcastAuthor }}</itunes:author>
     <itunes:type>serial</itunes:type>
@@ -17,18 +20,18 @@
     <itunes:category text="Business" />
     <itunes:explicit>false</itunes:explicit>
     {% for entry in craft.entries.section('episodes').all() %}
-    <item>
-      <title>{{ entry.title }}</title>
-      <author>Scott Oxford</author>
-      <description>{{ entry.episodeDescription }}</description>
-      <pubDate>{{ entry.postDate | date }}</pubDate>
-      {% set audioFile = entry.audioFile.one() %}
-      <enclosure url="{{ audioFile.url }}"
-                 type="audio/mpeg" length="{{ audioFile.size }}"/>
-      <itunes:duration>{{ entry.episodeLength }}</itunes:duration>
-      <guid isPermaLink="false">{{ entry.uid }}</guid>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
+        <item>
+          <title>{{ entry.title }}</title>
+          <author>Scott Oxford</author>
+          <description>{{ entry.episodeDescription }}</description>
+          <pubDate>{{ entry.postDate | date }}</pubDate>
+          {% set audioFile = entry.audioFile.one() %}
+          <enclosure url="{{ audioFile.url }}"
+                     type="audio/mpeg" length="{{ audioFile.size }}"/>
+          <itunes:duration>{{ entry.episodeLength }}</itunes:duration>
+          <guid isPermaLink="false">{{ entry.uid }}</guid>
+          <itunes:explicit>false</itunes:explicit>
+        </item>
     {% endfor %}
   </channel>
 </rss>
