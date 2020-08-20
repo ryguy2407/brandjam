@@ -119,41 +119,41 @@
         </div>
     </section>
 
-{#    <div id="scott"></div>#}
-{#    <section class="hidden lg:flex -mt-32 flex flex-row relative splitScreen">#}
-{#        <div class="w-1/2 relative" style="z-index: -1;height: 700px;">#}
-{#            {% set profilePic = entry.scottsProfilePic.one() %}#}
-{#            <img class="absolute object-cover h-full w-full" src="{{ profilePic.url }}" alt="{{ profilePic.title }}">#}
-{#        </div>#}
-{#        <div class="w-1/2 bg-red" style="z-index: -1;"></div>#}
-{#        <div class="absolute container flex flex-row items-center offset" style="top:100px;left:0;">#}
-{#            <div class="w-1/2"></div>#}
-{#            <div class="w-1/2 pl-32 pt-32 richText text-black" style="">#}
-{#                {% set logo = entry.scottsLogo.one() %}#}
-{#                <img src="{{ logo.url }}" class="mb-8" alt="{{ logo.title }}">#}
-{#                <div class="text-black text-xl">#}
-{#                    {{ entry.scottsBio | markdown }}#}
-{#                </div>#}
-{#                <a href="#contact" class="text-black text-xl mb-0 flex flex-row items-center">#}
-{#                    <i class="far fa-envelope mr-4"></i> <strong>ASK A QUESTION</strong>#}
-{#                </a>#}
-{#            </div>#}
-{#        </div>#}
-{#    </section>#}
-{#    <section class="block lg:hidden">#}
-{#        <div class="w-full relative" style="padding-bottom: 80%;">#}
-{#            <img class="absolute object-cover h-full w-full" src="/assets/img/scott.jpg" alt="Scott Oxford">#}
-{#        </div>#}
-{#        <div class="w-full p-8 bg-red">#}
-{#            <img class="absolute object-cover h-full w-full" src="{{ profilePic.url }}" alt="{{ profilePic.title }}">#}
-{#            <div class="text-black text-xl">#}
-{#                {{ entry.scottsBio | markdown }}#}
-{#            </div>#}
-{#            <a href="#contact" class="text-black text-xl mb-0 flex flex-row items-center">#}
-{#                <i class="far fa-envelope mr-4"></i> <strong>ASK A QUESTION</strong>#}
-{#            </a>#}
-{#        </div>#}
-{#    </section>#}
+    <div id="scott"></div>
+    <section class="hidden lg:flex -mt-32 flex flex-row relative splitScreen">
+        <div class="w-1/2 relative" style="z-index: -1;height: 700px;">
+            {% set profilePic = entry.scottsProfilePic.one() %}
+            <img class="absolute object-cover h-full w-full" src="{{ profilePic.url }}" alt="{{ profilePic.title }}">
+        </div>
+        <div class="w-1/2 bg-red" style="z-index: -1;"></div>
+        <div class="absolute container flex flex-row items-center offset" style="top:100px;left:0;">
+            <div class="w-1/2"></div>
+            <div class="w-1/2 pl-32 pt-32 richText text-black" style="">
+                {% set logo = entry.scottsLogo.one() %}
+                <img src="{{ logo.url }}" class="mb-8" alt="{{ logo.title }}">
+                <div class="text-black text-xl">
+                    {{ entry.scottsBio | markdown }}
+                </div>
+                <a href="#contact" class="text-black text-xl mb-0 flex flex-row items-center">
+                    <i class="far fa-envelope mr-4"></i> <strong>ASK A QUESTION</strong>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="block lg:hidden">
+        <div class="w-full relative" style="padding-bottom: 80%;">
+            <img class="absolute object-cover h-full w-full" src="/assets/img/scott.jpg" alt="Scott Oxford">
+        </div>
+        <div class="w-full p-8 bg-red">
+            <img class="absolute object-cover h-full w-full" src="{{ profilePic.url }}" alt="{{ profilePic.title }}">
+            <div class="text-black text-xl">
+                {{ entry.scottsBio | markdown }}
+            </div>
+            <a href="#contact" class="text-black text-xl mb-0 flex flex-row items-center">
+                <i class="far fa-envelope mr-4"></i> <strong>ASK A QUESTION</strong>
+            </a>
+        </div>
+    </section>
 
     <section class="py-8 lg:py-32 relative text-red" id="contact">
         <img class="hidden lg:block absolute right-0 top-0 h-full pt-32" src="/assets/img/brandjam-bg-red.svg" alt="Brand Jam Watermark">
@@ -174,7 +174,7 @@
     </section>
 
     <script>
-        //alignSpitScreen();
+        alignSpitScreen();
 
         function alignSpitScreen() {
             let windowWidth = window.innerWidth;
