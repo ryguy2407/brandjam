@@ -1,4 +1,4 @@
-dateModified: 1597643805
+dateModified: 1597898220
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: 'Brand Jam'
@@ -24,6 +24,10 @@ plugins:
       apiKey: dc8f426c-a9bd-4ed7-9874-aebeb9b2b2ec
       username: ryan@newwordorder.com.au
       volumeHandle: episodes
+  simple-sharing:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   wordsmith:
     edition: standard
     enabled: true

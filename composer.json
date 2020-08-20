@@ -5,7 +5,8 @@
     "gathercontent/gathercontent": "1.0.11",
     "topshelfcraft/wordsmith": "3.3.0.1",
     "vaersaagod/dospaces": "1.1.2",
-    "vlucas/phpdotenv": "^3.4.0"
+    "vlucas/phpdotenv": "^3.4.0",
+    "wrav/simplesharing": "^1.0"
   },
   "require-dev": {
     "yiisoft/yii2-shell": "^2.0.3"
