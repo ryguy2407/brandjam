@@ -1,16 +1,16 @@
 contentColumnType: text
-fieldGroup: 2848f61f-a635-4082-a4ae-0e460c981d0c
-handle: episodeTitle
+fieldGroup: ef71a456-3bfb-4f43-8c5b-3479c15e7092
+handle: podcastDescription
 instructions: ''
-name: 'Episode title'
-searchable: true
+name: 'Podcast description'
+searchable: false
 settings:
   byteLimit: null
   charLimit: null
   code: ''
   columnType: null
   initialRows: '4'
-  multiline: ''
+  multiline: '1'
   placeholder: ''
   uiMode: normal
 translationKeyFormat: null

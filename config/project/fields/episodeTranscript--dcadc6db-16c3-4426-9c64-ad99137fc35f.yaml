@@ -1,4 +1,4 @@
-contentColumnType: text
+contentColumnType: mediumtext
 fieldGroup: 2848f61f-a635-4082-a4ae-0e460c981d0c
 handle: episodeTranscript
 instructions: ''
@@ -8,10 +8,11 @@ settings:
   byteLimit: null
   charLimit: null
   code: ''
-  columnType: null
+  columnType: mediumtext
   initialRows: '4'
   multiline: '1'
   placeholder: ''
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText

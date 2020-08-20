@@ -1,19 +1,18 @@
 contentColumnType: string
-fieldGroup: 402036bc-20ab-42f8-bfec-f23921cc2162
-handle: audioFile
+fieldGroup: ef71a456-3bfb-4f43-8c5b-3479c15e7092
+handle: podcastImage
 instructions: ''
-name: 'Audio file'
-searchable: true
+name: 'Podcast image'
+searchable: false
 settings:
   allowSelfRelations: false
-  allowedKinds:
-    - audio
+  allowedKinds: null
   defaultUploadLocationSource: 'volume:0e7e0708-4a30-403c-9870-96a460b5668a'
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
-  restrictFiles: '1'
-  selectionLabel: 'Add audio'
+  restrictFiles: ''
+  selectionLabel: 'Add an image'
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false

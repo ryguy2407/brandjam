@@ -1,9 +1,9 @@
 contentColumnType: text
-fieldGroup: 2848f61f-a635-4082-a4ae-0e460c981d0c
-handle: episodeTitle
+fieldGroup: ef71a456-3bfb-4f43-8c5b-3479c15e7092
+handle: podcastAuthor
 instructions: ''
-name: 'Episode title'
-searchable: true
+name: 'Podcast author'
+searchable: false
 settings:
   byteLimit: null
   charLimit: null

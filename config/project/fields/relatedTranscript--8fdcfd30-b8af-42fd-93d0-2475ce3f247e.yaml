@@ -5,15 +5,16 @@ instructions: ''
 name: 'Related transcript'
 searchable: true
 settings:
-  allowSelfRelations: ''
+  allowSelfRelations: false
   limit: '1'
   localizeRelations: false
   selectionLabel: 'Add a transcript'
+  showSiteMenu: true
   source: null
   sources:
     - 'section:62697def-e49b-4cb0-ba54-6f2fe8af087b'
   targetSiteId: null
-  validateRelatedElements: ''
+  validateRelatedElements: false
   viewMode: null
 translationKeyFormat: null
 translationMethod: site
