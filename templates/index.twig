@@ -57,13 +57,13 @@
             {% set entries = craft.entries().section('episodes').orderBy('postDate asc').all() %}
             {% for episode in entries %}
                 <div class="{% if loop.first %}bg-red{% endif %} episode border-red border-b">
-                    <div class="p-8 flex items-center cursor-pointer">
-                        <h2 class="text-red text-4xl lg:text-8xl font-extrabold leading-none w-1/6">
+                    <div class="p-8 flex items-center cursor-pointer space-x-8">
+                        <h2 class="text-red text-4xl lg:text-8xl font-extrabold leading-none">
                             {{ episode.episodeNumber }}
                         </h2>
                         <div>
-                            <h2 class="text-red text-2xl lg:text-5xl font-extrabold leading-none">
-                                {{ episode.title }}
+                            <h2 class="text-red text-2xl lg:text-5xl font-extrabold leading-none mb-4">
+                                {{ episode.episodeTitle }}
                             </h2>
                             <p class="text-xl text-red">
                                 {{ episode.episodeSubheading }}
