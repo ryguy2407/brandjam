@@ -172,13 +172,14 @@
 
                     {% from _self import errorList %}
                     {% if craft.app.session.hasFlash('notice') %}
-                        <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
+                        <p class="message notice text-white mt-8">{{ craft.app.session.getFlash('notice') }}</p>
                     {% elseif craft.app.session.hasFlash('error') %}
                         <p class="message error">{{ craft.app.session.getFlash('error') }}</p>
                     {% endif %}
                 </div>
-                <form method="post" action="#" class="flex flex-col space-y-8 mt-8">
+                <form method="post" action="#" id="contact" class="flex flex-col space-y-8 mt-8">
                     {{ csrfInput() }}
+                    {{ redirectInput('/#contact') }}
                     <input type="hidden" name="action" value="contact-form/send">
                     <input class="placeholder-red focus:placeholder-black focus:outline-none bg-black border-b-2 border-red py-4 text-red" type="text" name="fromName" value="{{ message.fromName ?? '' }}" placeholder="Name">
                     {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
