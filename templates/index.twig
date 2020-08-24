@@ -29,7 +29,9 @@
     <div class="container mx-auto px-8 lg:px-0 text-red relative">
         <div class="invisible lg:visible absolute h-screen flex flex-col items-center" style="top: 50%;left: -45px;">
             <p class="text-teal uppercase transform rotate-90">Subscribe</p>
-            <i class="far fa-podcast text-teal text-3xl mt-16"></i>
+            <a target="_blank" href="https://podcasts.apple.com/au/podcast/brandjam-podcast/id1528668569">
+                <i class="far fa-podcast text-teal text-3xl mt-16"></i>
+            </a>
             <i class="fab fa-spotify text-teal text-3xl mt-4"></i>
             <img class="mt-4" src="/assets/img/google-podcast-icon.svg" style="width: 30px;" alt="Google podcasts">
         </div>
@@ -43,7 +45,9 @@
                 <h2 class="text-2xl lg:text-5xl font-light leading-none mb-8">
                     {{ entry.subheading }}
                 </h2>
-                {{ entry.description | markdown }}
+                <div class="text-lg">
+                    {{ entry.description }}
+                </div>
             </div>
         </div>
     </div>
@@ -56,12 +60,12 @@
 
             {% set entries = craft.entries().section('episodes').orderBy('postDate asc').all() %}
             {% for episode in entries %}
-                <div class="{% if loop.first %}bg-red{% endif %} episode border-red border-b">
-                    <div class="p-8 flex items-center cursor-pointer space-x-8">
-                        <h2 class="text-red text-4xl lg:text-8xl font-extrabold leading-none w-2/12 xxl:w-1/12">
+                <div class="{% if loop.index == 2 %}bg-red border-b-none{% else %}border-b{% endif %} episode border-red">
+                    <div class="p-8 flex flex-col lg:flex-row items-center cursor-pointer space-x-0 lg:space-x-8">
+                        <h2 class="text-red text-5xl lg:text-8xl font-extrabold leading-none w-2/12 xxl:w-1/12 mb-4 lg:mb-0">
                             {{ episode.episodeNumber }}
                         </h2>
-                        <div>
+                        <div class="text-center lg:text-left">
                             <h2 class="text-red text-2xl lg:text-5xl font-extrabold leading-none mb-4">
                                 {{ episode.episodeTitle }}
                             </h2>
@@ -70,12 +74,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-col lg:flex-row items-center episodeInfo {% if not loop.first %}hidden{% endif %}">
-                        <div class="w-full px-8 lg:px-0 lg:w-1/2">
+                    <div class="flex flex-col lg:flex-row items-center episodeInfo {% if loop.index == 2 %}block{% else %}hidden{% endif %}">
+                        <div class="w-full lg:w-1/2">
                             {% set image = episode.episodeImage.one() %}
                             {% if image | length %}
-                                <a href="{{ episode.url }}">
-                                    <img class="hexMask ml-0 mb-8 lg:mb-0 lg:ml-8" src="{{ image.url }}" alt="{{ image.title }}">
+                                <a href="{{ episode.url }}" class="block">
+                                    <img class="hidden lg:block hexMask ml-0 mb-8 lg:mb-0 lg:ml-8 w-full" src="{{ image.url }}" alt="{{ image.title }}">
+                                    <img class="block lg:hidden w-full ml-0 lg:mb-0 lg:ml-8" src="{{ image.url }}" alt="{{ image.title }}">
                                 </a>
                             {% endif %}
                         </div>
@@ -119,7 +124,7 @@
 
     <div id="scott"></div>
     <section class="hidden lg:flex -mt-32 flex flex-row relative splitScreen">
-        <div class="w-1/2 relative" style="z-index: -1;height: 1300px;">
+        <div class="w-1/2 relative" style="z-index: -1;height: 1000px;">
             {% set profilePic = entry.scottsProfilePic.one() %}
             <img class="absolute object-cover h-full w-full" src="{{ profilePic.url }}" alt="{{ profilePic.title }}">
         </div>
@@ -128,8 +133,14 @@
             <div class="w-1/2"></div>
             <div class="w-1/2 pl-32 pt-32 richText text-black" style="">
                 {% set logo = entry.scottsLogo.one() %}
-                <img src="{{ logo.url }}" class="mb-8" alt="{{ logo.title }}">
-                <div class="text-black text-xl">
+                <div class="flex flex-row items-center w-full">
+                    <img src="{{ logo.url }}" alt="{{ logo.title }}">
+                    <div class="justify-end ml-auto space-x-2">
+                        <a target="_blank" href="https://www.linkedin.com/in/scottoxford/"><i class="fab text-2xl fa-linkedin-in"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/scottoxford/"><i class="fab text-2xl fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="text-black mt-8 text-xl">
                     {{ entry.scottsBio | markdown }}
                 </div>
                 <a href="#contact" class="text-black text-xl mb-0 flex flex-row items-center">
@@ -139,8 +150,10 @@
         </div>
     </section>
     <section class="block lg:hidden">
-        <div class="w-full relative" style="padding-bottom: 80%;">
+        <div class="w-full relative flex flex-row" style="padding-bottom: 80%;">
             <img class="absolute object-cover h-full w-full" src="/assets/img/scott.jpg" alt="Scott Oxford">
+            <a target="_blank" href="https://www.linkedin.com/in/scottoxford/"><i class="fab fa-linkedin-in"></i></a>
+            <a target="_blank" href="https://www.instagram.com/scottoxford/"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="w-full p-8 bg-red">
             <img class="hidden absolute object-cover h-full w-full" src="{{ profilePic.url }}" alt="{{ profilePic.title }}">

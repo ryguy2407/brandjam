@@ -22,7 +22,8 @@
           <title>{{ entry.episodeTitle }} - {{ entry.episodeSubheading }}</title>
           <author>Scott Oxford</author>
           <description>{{ entry.episodeDescription }}</description>
-          <pubDate>{{ entry.postDate | date }}</pubDate>
+          {% set tz = 'Australia/Brisbane' %}
+          <pubDate>{{ entry.postDate | date('D, d M Y H:i:s T') }}</pubDate>
           {% set audioFile = entry.audioFile.one() %}
           <enclosure url="{{ audioFile.url }}"
                      type="audio/mpeg" length="{{ audioFile.size }}"/>

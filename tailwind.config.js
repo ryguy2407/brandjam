@@ -20,9 +20,6 @@ module.exports = {
 
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }
-
-      'xxl': '1700px',
-      // => @media (min-width: 1700px) { ... }
     },
     fontSize: {
       'xs': '.75rem',
