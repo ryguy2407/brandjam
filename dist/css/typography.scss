@@ -28,7 +28,10 @@ p, li {
     @apply text-xl;
   }
   a {
-    @apply underline;
+    @apply underline font-bold;
+    &:hover {
+      @apply opacity-75;
+    }
   }
 
   p {

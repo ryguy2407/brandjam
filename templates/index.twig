@@ -148,10 +148,10 @@
                         <a target="_blank" href="https://www.instagram.com/scottoxford/"><i class="fab text-2xl fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="text-black mt-8 text-xl">
+                <div class="text-black mt-8 text-xl markdown">
                     {{ entry.scottsBio | markdown }}
                 </div>
-                <a href="#contact" class="text-black text-xl mb-0 flex flex-row items-center">
+                <a href="#contact" class="text-black text-xl mb-0 flex flex-row items-center hover:opacity-75">
                     <i class="far fa-envelope mr-4"></i> <strong>ASK A QUESTION</strong>
                 </a>
             </div>
@@ -165,10 +165,10 @@
         </div>
         <div class="w-full p-8 bg-red">
             <img class="hidden absolute object-cover h-full w-full" src="{{ profilePic.url }}" alt="{{ profilePic.title }}">
-            <div class="text-black text-xl richText">
+            <div class="text-black text-xl markdown">
                 {{ entry.scottsBio | markdown }}
             </div>
-            <a href="#contact" class="text-black text-xl mb-0 flex flex-row items-center">
+            <a href="#contact" class="text-black text-xl mb-0 flex flex-row items-center hover:opacity-75">
                 <i class="far fa-envelope mr-4"></i> <strong>ASK A QUESTION</strong>
             </a>
         </div>
