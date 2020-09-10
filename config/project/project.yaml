@@ -1,4 +1,4 @@
-dateModified: 1598253116
+dateModified: 1599712348
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: 'Brand Jam'
@@ -46,7 +46,7 @@ system:
   edition: solo
   live: true
   name: 'Brand Jam'
-  schemaVersion: 3.5.12
+  schemaVersion: 3.5.13
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
