@@ -1,9 +1,0 @@
-baseUrl: $DEFAULT_SITE_URL
-enabled: true
-handle: default
-hasUrls: true
-language: en-AU
-name: 'Brand Jam'
-primary: true
-siteGroup: d67fecbe-ab47-46bd-9859-71c9f8b48de1
-sortOrder: 1
