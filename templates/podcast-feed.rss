@@ -8,7 +8,7 @@
     </itunes:owner>
     <googleplay:author>{{ rssGlobals.podcastAuthor }}</googleplay:author>
     <itunes:author>{{ rssGlobals.podcastAuthor }}</itunes:author>
-    <itunes:type>serial</itunes:type>
+    <itunes:type>episodic</itunes:type>
     <description>{{ rssGlobals.podcastDescription }}</description>
     {% set image = rssGlobals.podcastImage.one() %}
     <googleplay:image href="{{ image.url }}"/>
