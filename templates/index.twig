@@ -62,9 +62,9 @@
 
             <p class="font-bold text-red text-xl uppercase mb-8 ml-8 lg:ml-0">Series 1</p>
 
-            {% set entries = craft.entries().section('episodes').orderBy('postDate asc').all() %}
+            {% set entries = craft.entries().section('episodes').orderBy('postDate desc').all() %}
             {% for episode in entries %}
-                <div class="{% if loop.index == 2 %}bg-red border-b-none{% else %}border-b{% endif %} episode border-red">
+                <div class="{% if loop.index == 1 %}bg-red border-b-none{% else %}border-b{% endif %} episode border-red">
                     <div class="p-8 flex flex-col lg:flex-row items-center cursor-pointer space-x-0 lg:space-x-8">
                         <h2 class="text-red text-5xl lg:text-8xl font-extrabold leading-none w-2/12 xxl:w-1/12 mb-4 lg:mb-0">
                             {{ episode.episodeNumber }}
@@ -78,7 +78,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-col lg:flex-row items-center episodeInfo {% if loop.index == 2 %}block{% else %}hidden{% endif %}">
+                    <div class="flex flex-col lg:flex-row items-center episodeInfo {% if loop.index == 1 %}block{% else %}hidden{% endif %}">
                         <div class="w-full lg:w-1/2">
                             {% set image = episode.episodeImage.one() %}
                             {% if image | length %}
