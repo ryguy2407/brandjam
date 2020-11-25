@@ -21,7 +21,7 @@
         <item>
           <title>{{ entry.episodeTitle }} - {{ entry.episodeSubheading }}</title>
           <author>Scott Oxford</author>
-          <description>{{ entry.episodeDescription }}</description>
+          <description>{{ entry.episodeDescription | markdown }}</description>
           {% set tz = 'Australia/Brisbane' %}
           <pubDate>{{ entry.postDate | date('D, d M Y H:i:s O') }}</pubDate>
           {% set audioFile = entry.audioFile.one() %}
