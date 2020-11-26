@@ -21,6 +21,10 @@
         <item>
           <title>{{ entry.episodeTitle }} - {{ entry.episodeSubheading }}</title>
           <author>Scott Oxford</author>
+          {% if entry.explicitEpisode %}
+            <googleplay:explicit>yes</googleplay:explicit>
+            <itunes:explicit>yes</itunes:explicit>
+          {% endif %}
           <description>{{ entry.episodeDescription | markdown }}</description>
           {% set tz = 'Australia/Brisbane' %}
           <pubDate>{{ entry.postDate | date('D, d M Y H:i:s O') }}</pubDate>
