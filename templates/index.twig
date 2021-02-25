@@ -214,7 +214,7 @@
                     <textarea class="placeholder-red focus:placeholder-black focus:outline-none bg-black border-b-2 border-red py-4 text-red" name="message" cols="30" rows="1" placeholder="Message">{{ message.message ?? '' }}</textarea>
                     {{ message is defined and message ? errorList(message.getErrors('message')) }}
 
-                    <input id="messageTwo" name="messageTwo" type="text">
+                    {{ craft.recaptcha.render() }}
 
                     <button type="submit" class="transition duration-500 ease-in-out bg-red p-4 text-black font-bold uppercase block focus:outline-none w-full lg:w-1/4 hover:bg-redHover">Submit</button>
                 </form>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "371d308c4ee2ac75c7d81d9f3b722aae",
+    "content-hash": "17c68a1a0caa49d59db1dbfdcee0044e",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -746,11 +746,11 @@
         },
         {
             "name": "craftcms/plugin-installer",
-            "version": "1.5.6",
+            "version": "1.5.7",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/plugin-installer/zipball/4d24e227a086db3d8784a705f59060c49cf989ad",
-                "reference": "4d24e227a086db3d8784a705f59060c49cf989ad",
+                "url": "https://api.github.com/repos/craftcms/plugin-installer/zipball/23ec472acd4410b70b07d5a02b2b82db9ee3f66b",
+                "reference": "23ec472acd4410b70b07d5a02b2b82db9ee3f66b",
                 "shasum": ""
             },
             "require": {
@@ -778,7 +778,7 @@
                 "installer",
                 "plugin"
             ],
-            "time": "2020-10-26T23:34:21+00:00"
+            "time": "2021-02-18T02:01:38+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -1247,32 +1247,27 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.2.0",
+            "version": "6.5.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/0aa74dfb41ae110835923ef10a9d803a22d50e79",
-                "reference": "0aa74dfb41ae110835923ef10a9d803a22d50e79",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
+                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^1.4",
-                "guzzlehttp/psr7": "^1.7",
-                "php": "^7.2.5 || ^8.0",
-                "psr/http-client": "^1.0"
-            },
-            "provide": {
-                "psr/http-client-implementation": "1.0"
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.6.1",
+                "php": ">=5.5",
+                "symfony/polyfill-intl-idn": "^1.17.0"
             },
             "suggest": {
-                "ext-curl": "Required for CURL handler support",
-                "ext-intl": "Required for Internationalized Domain Name (IDN) support",
                 "psr/log": "Required for using the Log middleware"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.1-dev"
+                    "dev-master": "6.5-dev"
                 }
             },
             "autoload": {
@@ -1291,11 +1286,6 @@
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
-                },
-                {
-                    "name": "Márk Sági-Kazár",
-                    "email": "mark.sagikazar@gmail.com",
-                    "homepage": "https://sagikazarmark.hu"
                 }
             ],
             "description": "Guzzle is a PHP HTTP client library",
@@ -1306,12 +1296,10 @@
                 "framework",
                 "http",
                 "http client",
-                "psr-18",
-                "psr-7",
                 "rest",
                 "web service"
             ],
-            "time": "2020-10-10T11:47:56+00:00"
+            "time": "2020-06-16T21:01:06+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -2022,6 +2010,59 @@
             "time": "2020-07-05T07:53:37+00:00"
         },
         {
+            "name": "matt-west/craft-recaptcha",
+            "version": "1.5.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/matt-west/craft-recaptcha/zipball/f514e29010e75b8f2cc8170e4c22214f1cab9866",
+                "reference": "f514e29010e75b8f2cc8170e4c22214f1cab9866",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.1",
+                "guzzlehttp/guzzle": "^6.3"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "reCAPTCHA",
+                "handle": "recaptcha",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/matt-west/craft-recaptcha/master/CHANGELOG.md",
+                "components": {
+                    "craftRecaptchaService": "mattwest\\craftrecaptcha\\services\\CraftRecaptchaService"
+                },
+                "class": "mattwest\\craftrecaptcha\\CraftRecaptcha"
+            },
+            "autoload": {
+                "psr-4": {
+                    "mattwest\\craftrecaptcha\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matt West",
+                    "homepage": "https://mattwest.io"
+                }
+            ],
+            "description": "Integrate Google’s reCAPTCHA into your forms.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft recaptcha",
+                "craft-plugin",
+                "craftcms"
+            ],
+            "support": {
+                "docs": "https://github.com/matt-west/craft-recaptcha/blob/master/README.md",
+                "issues": "https://github.com/matt-west/craft-recaptcha/issues"
+            },
+            "time": "2020-12-07T09:53:52+00:00"
+        },
+        {
             "name": "mikehaertl/php-shellcommand",
             "version": "1.6.3",
             "dist": {
@@ -2594,49 +2635,6 @@
             "time": "2017-02-14T16:28:37+00:00"
         },
         {
-            "name": "psr/http-client",
-            "version": "1.0.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-client/zipball/2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
-                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0 || ^8.0",
-                "psr/http-message": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Http\\Client\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for HTTP clients",
-            "homepage": "https://github.com/php-fig/http-client",
-            "keywords": [
-                "http",
-                "http-client",
-                "psr",
-                "psr-18"
-            ],
-            "time": "2020-06-29T06:28:15+00:00"
-        },
-        {
             "name": "psr/http-message",
             "version": "1.0.1",
             "dist": {
@@ -3147,7 +3145,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/c6c942b1ac76c82448322025e084cadc56048b4e",
@@ -3203,11 +3201,11 @@
         },
         {
             "name": "symfony/polyfill-iconv",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/b34bfb8c4c22650ac080d2662ae3502e5f2f4ae6",
-                "reference": "b34bfb8c4c22650ac080d2662ae3502e5f2f4ae6",
+                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/06fb361659649bcfd6a208a0f1fcaf4e827ad342",
+                "reference": "06fb361659649bcfd6a208a0f1fcaf4e827ad342",
                 "shasum": ""
             },
             "require": {
@@ -3256,15 +3254,15 @@
                 "portable",
                 "shim"
             ],
-            "time": "2021-01-07T16:49:33+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/267a9adeb8ecb8071040a740930e077cdfb987af",
-                "reference": "267a9adeb8ecb8071040a740930e077cdfb987af",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/5601e09b69f26c1828b13b6bb87cb07cddba3170",
+                "reference": "5601e09b69f26c1828b13b6bb87cb07cddba3170",
                 "shasum": ""
             },
             "require": {
@@ -3314,15 +3312,15 @@
                 "portable",
                 "shim"
             ],
-            "time": "2021-01-07T16:49:33+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/0eb8293dbbcd6ef6bf81404c9ce7d95bcdf34f44",
-                "reference": "0eb8293dbbcd6ef6bf81404c9ce7d95bcdf34f44",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/2d63434d922daf7da8dd863e7907e67ee3031483",
+                "reference": "2d63434d922daf7da8dd863e7907e67ee3031483",
                 "shasum": ""
             },
             "require": {
@@ -3378,15 +3376,15 @@
                 "portable",
                 "shim"
             ],
-            "time": "2021-01-07T16:49:33+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/6e971c891537eb617a00bb07a43d182a6915faba",
-                "reference": "6e971c891537eb617a00bb07a43d182a6915faba",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/43a0283138253ed1d48d352ab6d0bdb3f809f248",
+                "reference": "43a0283138253ed1d48d352ab6d0bdb3f809f248",
                 "shasum": ""
             },
             "require": {
@@ -3439,15 +3437,15 @@
                 "portable",
                 "shim"
             ],
-            "time": "2021-01-07T17:09:11+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f377a3dd1fde44d37b9831d68dc8dea3ffd28e13",
-                "reference": "f377a3dd1fde44d37b9831d68dc8dea3ffd28e13",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/5232de97ee3b75b0360528dae24e73db49566ab1",
+                "reference": "5232de97ee3b75b0360528dae24e73db49566ab1",
                 "shasum": ""
             },
             "require": {
@@ -3496,11 +3494,11 @@
                 "portable",
                 "shim"
             ],
-            "time": "2021-01-07T16:49:33+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/cc6e6f9b39fe8075b3dabfbaf5b5f645ae1340c9",
@@ -3553,7 +3551,7 @@
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/a678b42e92f86eca04b7fa4c0f6f19d097fb69e2",
@@ -3609,7 +3607,7 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/dc3063ba22c2a1fd2f45ed856374d79114998f91",
